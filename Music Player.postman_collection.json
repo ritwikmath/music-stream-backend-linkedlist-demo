@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "f0cc72a6-d2fe-4f08-958b-a5208e162dc9",
+		"name": "Music Player",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10477025"
+	},
+	"item": [
+		{
+			"name": "Get Music List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/music-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"music-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play Next",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/play-next",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"play-next"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play Previous",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/play-previous",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"play-previous"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Playlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"music_id\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/add-to-playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add-to-playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play Music",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"music_id\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/play-music",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"play-music"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
